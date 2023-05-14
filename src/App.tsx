@@ -6,7 +6,7 @@ import { DogsPage } from './pages/DogsPage';
 
 const App = () => {
   return (
-    <BrowserRouter basename={'/'}>
+    <BrowserRouter basename={'/lynksen'}>
       <Routes>
         <Route path={'/'} element={<MainPage />}/>
         <Route path={'/cats'} element={<CatsPage />}/>
