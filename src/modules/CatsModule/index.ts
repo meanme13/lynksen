@@ -1,0 +1,1 @@
+export { default as CatsModule } from './Cats/Cats';

@@ -1,0 +1,5 @@
+@import '../../styles/animations.scss';
+
+.image {
+  @extend .skeleton_animation;
+}

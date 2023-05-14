@@ -1,0 +1,13 @@
+@import '../../UI/styles/constants.scss';
+
+.layout {
+  width: 70%;
+  min-height: 100vh;
+  margin: 0 auto 0 auto;
+  padding-bottom: 160px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.45);
+
+  @media screen and (max-width: $medium) {
+    width: 100%;
+  }
+}

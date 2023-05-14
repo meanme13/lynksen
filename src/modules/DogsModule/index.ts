@@ -1,0 +1,1 @@
+export { default as DogsModule } from './Dogs/Dogs';

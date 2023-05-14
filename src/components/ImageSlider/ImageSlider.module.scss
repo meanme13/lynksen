@@ -1,0 +1,16 @@
+@import '../../UI/styles/constants.scss';
+
+.sliderBlock {
+  width: 600px;
+  height: 600px;
+  margin: 30px auto 0 auto;
+
+  @media screen and (max-width: $medium) {
+    width: 400px;
+    height: 400px;
+  }
+  @media screen and (max-width: $small) {
+    width: 320px;
+    height: 320px;
+  }
+}

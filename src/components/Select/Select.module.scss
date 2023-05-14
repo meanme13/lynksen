@@ -1,0 +1,41 @@
+@import '../../UI/styles/colors';
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.select {
+  appearance: none;
+  outline: 0;
+  font: inherit;
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
+  no-repeat right 0.8em center / 1.4em,
+  linear-gradient(to left, $purple 3em, $white 3em);
+  border-radius: 15px;
+  border: 0.5px solid #C8CCDD;
+  cursor: pointer;
+
+  option {
+    color: inherit;
+    background-color: darkseagreen;
+  }
+  /* Remove focus outline */
+  &:focus {
+    outline: none;
+  }
+  /* Remove IE arrow */
+  &::-ms-expand {
+    display: none;
+  }
+}
