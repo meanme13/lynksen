@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/lynksen/static/css/main.9e099b85.css",
-    "main.js": "/lynksen/static/js/main.37f346cb.js",
+    "main.css": "/lynksen/static/css/main.35fa189c.css",
+    "main.js": "/lynksen/static/js/main.6708a33d.js",
     "static/media/NotoSans-Bold.ttf": "/lynksen/static/media/NotoSans-Bold.c0e71cceed04ac588779.ttf",
     "static/media/NotoSans-SemiBold.ttf": "/lynksen/static/media/NotoSans-SemiBold.390cedcb4939e62769c4.ttf",
     "static/media/NotoSans-Regular.ttf": "/lynksen/static/media/NotoSans-Regular.8b5fb1085ae46bea8ae1.ttf",
     "index.html": "/lynksen/index.html",
-    "main.9e099b85.css.map": "/lynksen/static/css/main.9e099b85.css.map",
-    "main.37f346cb.js.map": "/lynksen/static/js/main.37f346cb.js.map"
+    "main.35fa189c.css.map": "/lynksen/static/css/main.35fa189c.css.map",
+    "main.6708a33d.js.map": "/lynksen/static/js/main.6708a33d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e099b85.css",
-    "static/js/main.37f346cb.js"
+    "static/css/main.35fa189c.css",
+    "static/js/main.6708a33d.js"
   ]
 }
