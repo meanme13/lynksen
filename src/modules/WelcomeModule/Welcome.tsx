@@ -15,7 +15,7 @@ const WelcomeModule: FC = () => {
 
   return (
     <div className={style.container}>
-      <p className={style.title}>Please, pick a gallery!</p>
+      <p className={style.title}>Please, select a gallery!</p>
       <div className={style.button_group}>
         <Button
           width="80%"

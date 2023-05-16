@@ -3,8 +3,10 @@
 
 .container {
   width: 600px;
-  height: 120px;
+  height: auto;
   margin: 30px auto 60px auto;
+  border: 1px solid $grey;
+  padding: 30px 0;
 
   @media screen and (max-width: $medium) {
     width: 400px;
@@ -16,19 +18,30 @@
 
 .title {
   font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 12px;
+  font-size: 16px;
+  position: relative;
+  padding: 20px 10px;
 }
 
 .text, .url {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  margin-bottom: 12px;
+  position: relative;
+  padding: 20px 10px;
 }
 
 .url {
+  margin-top: 20px;
   text-decoration: underline;
   color: $semi_purple;
+}
+
+.titleName {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  font-weight: 400;
+  color: $semi_purple;
+  font-size: 13px;
 }
