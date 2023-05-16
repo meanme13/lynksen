@@ -11,6 +11,8 @@ export type SelectType = {
 
 export type DescriptionType = {
   origin: string
-  description: string
+  description?: string
+  temperament?: string | undefined
   wikipedia_url: string
+  name: string
 }

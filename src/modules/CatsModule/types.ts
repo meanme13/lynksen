@@ -8,8 +8,16 @@ export type SelectPropsType = {
 export const descriptionInitial = {
   origin: '',
   description: '',
-  wikipedia_url: ''
+  wikipedia_url: '',
+  name: ''
 };
+
+export type CatsDescriptionType = {
+  origin: string
+  description: string
+  wikipedia_url: string
+  name: string
+}
 
 export type TitlePropsType = {
   breeds: IAllBreeds[] | undefined

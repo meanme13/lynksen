@@ -2,7 +2,8 @@ export interface IAllBreeds {
   id: string | number
   name: string
   origin: string
-  description: string
+  description: string,
+  temperament?: string
   wikipedia_url: string
 }
 

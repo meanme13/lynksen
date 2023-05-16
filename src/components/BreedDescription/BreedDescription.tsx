@@ -4,6 +4,8 @@ import { CardContent } from '../../UI/Skeletons/CardContent';
 import { DescriptionType } from '../types';
 
 const BreedDescription: FC<DescriptionType> = (props) => {
+  const hasURL = props.wikipedia_url ? props.wikipedia_url : `https://www.google.com/search?q=${props.name}`;
+
   return (
     <div className={style.container}>
       {
@@ -11,7 +13,8 @@ const BreedDescription: FC<DescriptionType> = (props) => {
           <div>
             <p className={style.title}>This breed is from {props.origin}</p>
             <p className={style.text}>{props.description}</p>
-            <a className={style.url} href={props.wikipedia_url ? props.wikipedia_url : 'https://google.com'}>More information here</a>
+            <p className={style.text}>{props.temperament}</p>
+            <a className={style.url} href={hasURL}>More information here</a>
           </div> : <CardContent />
       }
     </div>

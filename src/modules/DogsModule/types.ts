@@ -7,9 +7,17 @@ export type SelectPropsType = {
 
 export const descriptionInitial = {
   origin: '',
-  description: '',
-  wikipedia_url: ''
+  temperament: '',
+  wikipedia_url: '',
+  name: ''
 };
+
+export type DogsDescriptionType = {
+  origin: string
+  temperament: string | undefined
+  wikipedia_url: string
+  name: string
+}
 
 export type TitlePropsType = {
   breeds: IAllBreeds[] | undefined

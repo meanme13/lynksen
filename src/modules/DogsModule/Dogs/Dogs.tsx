@@ -1,6 +1,6 @@
 import {FC, useEffect, useState} from 'react';
 import { dogsAPI } from '../api/fetchDogsData';
-import { DescriptionType} from '../../../components/types';
+import { DogsDescriptionType } from '../types';
 import { BreedDescription } from '../../../components/BreedDescription';
 import { descriptionInitial } from '../types';
 import { BreedTitle } from '../../../components/BreedTitle';
@@ -8,24 +8,24 @@ import { ImageSlider } from '../../../components/ImageSlider';
 
 const Dogs: FC = () => {
   const [ selectedBreed, setSelectedBreed ] = useState<number | string>(1);
-  const [ description, setDescription ] = useState<DescriptionType>(descriptionInitial);
+  const [ description, setDescription ] = useState<DogsDescriptionType>(descriptionInitial);
   const { data: breeds } = dogsAPI.useFetchAllBreedsQuery('');
-  const { data: dogs, refetch } = dogsAPI.useFetchOneBreedQuery(selectedBreed);
-  console.log(breeds);
+  const { data: dogs } = dogsAPI.useFetchOneBreedQuery(selectedBreed);
 
   const handleSelectChange = (value: number | string) => {
     setSelectedBreed(value);
-    refetch();
   };
 
   useEffect(() => {
     const selected = breeds && breeds.find(obj => obj.id === selectedBreed);
+    console.log(breeds);
 
     if (selected) {
       setDescription({
         origin: selected.origin,
-        description: selected.description,
-        wikipedia_url: selected.wikipedia_url
+        temperament: selected.temperament,
+        wikipedia_url: selected.wikipedia_url,
+        name: selected.name
       });
     }
   }, [selectedBreed, breeds]);
@@ -36,8 +36,9 @@ const Dogs: FC = () => {
       <ImageSlider items={dogs} />
       <BreedDescription
         origin={description.origin}
-        description={description.description}
+        temperament={description.temperament}
         wikipedia_url={description.wikipedia_url}
+        name={description.name}
       />
     </div>
   );
